@@ -20,3 +20,5 @@ echo "settings.xml updated with local repository to : " ${M2_LOCAL_REPO}/reposit
 
 export GRADLE_USER_HOME="${ROOT_FOLDER}/.gradle"
 mkdir -p ${GRADLE_USER_HOME}
+
+echo "GRADLE_USER_HOME set to  " ${GRADLE_USER_HOME}
