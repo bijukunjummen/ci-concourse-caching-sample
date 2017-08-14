@@ -7,7 +7,6 @@ image_resource:
     tag: 8-jdk
 inputs:
   - name: repo
-  - name: version
 outputs:
   - name: out
 run:
