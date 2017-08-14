@@ -1,0 +1,23 @@
+---
+platform: linux
+image_resource:
+  type: docker-image
+  source:
+    repository: openjdk
+    tag: 8-jdk
+inputs:
+  - name: repo
+  - name: version
+outputs:
+  - name: out
+run:
+  path: /bin/bash
+  args:
+    - repo/ci/tasks/build.sh
+
+caches:
+  - path: .gradle/
+  - path: .m2/
+
+params:
+  PROJECT_TYPE: 
