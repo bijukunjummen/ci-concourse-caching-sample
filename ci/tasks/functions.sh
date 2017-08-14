@@ -9,9 +9,10 @@ function buildMaven() {
 
 function build() {
     local projectType="${1}"
+
     if [[ projectType == "MAVEN" ]]; then
-        buildMaven()
+        buildMaven
     else
-        buildGradle()
+        buildGradle
     fi
 }
