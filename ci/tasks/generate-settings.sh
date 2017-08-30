@@ -5,6 +5,9 @@ mkdir -p ${M2_HOME}
 
 M2_LOCAL_REPO="${ROOT_FOLDER}/.m2"
 
+# For Maven Wrapper
+export MAVEN_USER_HOME=${M2_LOCAL_REPO}
+
 mkdir -p "${M2_LOCAL_REPO}/repository"
 
 cat > ${M2_HOME}/settings.xml <<EOF
