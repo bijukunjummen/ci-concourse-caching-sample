@@ -15,8 +15,8 @@ run:
     - repo/ci/tasks/build.sh
 
 caches:
-  - path: .gradle/
-  - path: .m2/
+  - path: gradle
+  - path: maven
 
 params:
   PROJECT_TYPE: 
