@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+set -x
 
 export ROOT_FOLDER=$( pwd )
 export REPO=repo
